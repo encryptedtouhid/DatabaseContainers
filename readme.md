@@ -20,8 +20,8 @@ This repository contains Docker Compose (`docker-compose.yml`) files for running
 
 1. Clone this repository:
    ```bash
-   git clone https://github.com/your-username/docker-db-stacks.git
-   cd docker-db-stacks
+   git clone https://github.com/encryptedtouhid/DatabaseContainers.git
+   cd FolderName
 
 2. Navigate to the specific folder (if split) or just run:
    ```bash
@@ -42,7 +42,7 @@ Contributions are welcome! Here's how you can help:
 1. **Fork** this repository to your GitHub account.
 2. **Clone** your fork locally:
    ```bash
-   git clone https://github.com/your-username/docker-db-stacks.git
+   git clone https://github.com/encryptedtouhid/DatabaseContainers.git
    cd docker-db-stacks
 3. Create a feature branch:
    ```bash
