@@ -1,0 +1,17 @@
+version: "3.8"
+
+services:
+  chromadb:
+    image: ghcr.io/chroma-core/chroma:latest
+    platform: linux/arm64  # Important for M1 Mac compatibility
+    ports:
+      - "8000:8000"         # Expose the ChromaDB server on localhost:8000
+    volumes:
+      - chroma-data:/chroma/chroma  # Persist ChromaDB data
+    environment:
+      - IS_PERSISTENT=TRUE
+      - CHROMA_DB_IMPL=duckdb+parquet  # Default storage backend
+      - ANONYMIZED_TELEMETRY=False     # Optional: disable telemetry
+
+volumes:
+  chroma-data:
